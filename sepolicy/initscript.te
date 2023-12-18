@@ -1,0 +1,6 @@
+type initscript_dt, domain;
+type initscript_dt_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(initscript_dt)
+domain_auto_trans(shell, initscript_dt_exec, initscript_dt);
+allow initscript_dt vendor_toolbox_exec:file { read open execute execute_no_trans };

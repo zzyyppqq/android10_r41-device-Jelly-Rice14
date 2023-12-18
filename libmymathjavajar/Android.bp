@@ -1,0 +1,6 @@
+java_import {
+    name: "libmymathjavajar",
+    installable: false,
+    jars: ["libmymathjava.jar"],
+    product_specific: true,
+}

@@ -1,0 +1,13 @@
+cc_prebuilt_library_shared {
+    name: "libmymathprebuild",
+    arch: {
+        x86: {
+            srcs: ["lib/x86/libmymath.so"],
+        },
+        x86_64: {
+            srcs: ["lib/x86_64/libmymath.so"],
+        }
+    },
+    export_include_dirs: ["include"],
+    product_specific: true,
+}

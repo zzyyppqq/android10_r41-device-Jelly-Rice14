@@ -1,0 +1,5 @@
+service initscript /vendor/bin/initscript
+    class main
+    user root
+    group root system
+    oneshot

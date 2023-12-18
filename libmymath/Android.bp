@@ -1,0 +1,6 @@
+//cc_library_shared {
+//    name: "libmymath",
+//    srcs: ["my_math.cpp"],
+//    export_include_dirs: ["."],
+//    product_specific: true,
+//}

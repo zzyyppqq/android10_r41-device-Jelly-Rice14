@@ -1,0 +1,15 @@
+cc_binary {
+    name: "helloseandroid",
+    srcs: ["hello_seandroid.c"],
+    cflags: [
+        "-Werror",
+        "-Wno-unused-parameter"
+    ],
+	//Android10 上貌似不支持配置 product 分区的 sepolicy（Android 11 及以后是支持的）
+	//所以只能选择 vendor 分区了
+    vendor: true,
+    shared_libs: [
+        "libcutils",
+        "liblog"
+    ]
+}

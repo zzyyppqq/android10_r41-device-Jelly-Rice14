@@ -1,0 +1,11 @@
+android_library  {
+    name: "FirstSystemAndroidLibrary",
+    srcs: ["src/**/*.java", "src/**/*.kt"],
+    resource_dirs: ["res"],
+    manifest: "AndroidManifest.xml",
+    sdk_version: "current",
+    product_specific: true,
+    static_libs: ["androidx.appcompat_appcompat",],
+    java_version: "1.7",
+    installable: true,
+}

@@ -1,0 +1,9 @@
+//java_library {
+//    name: "hellojava",
+//    installable: true,
+//    product_specific: true,
+//    srcs: ["**/*.java"],
+//    sdk_version: "current"
+//}
+// 指定 installable: true, 则编译出来的 jar 包里面是 classes.dex 文件。这种才是 Android 虚拟机可以加载的格式。
+// 如果不指定 installable: true, 则编译出来的 jar 包里面是 .class 文件。这种包是没法安装到系统上的，只能给其他 java 模块作为 static_libs 依赖。

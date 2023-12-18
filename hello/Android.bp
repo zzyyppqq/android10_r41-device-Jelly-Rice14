@@ -1,0 +1,8 @@
+cc_binary {                      //模块类型为可执行文件
+    name: "hello",               //模块名hello
+    srcs: ["hello.cpp"],         //源文件列表
+    product_specific: true,      //编译出来放在/product目录下(默认是放在/system目录下)
+    cflags: ["-Werror"],         //添加编译选项
+    //shared_libs: ["libmymath"],  //添加动态库依赖
+    shared_libs: ["libmymathprebuild"],  //添加动态库依赖
+}

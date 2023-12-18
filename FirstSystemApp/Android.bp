@@ -1,0 +1,20 @@
+android_app {
+    name: "FirstSystemApp",
+    srcs: ["src/**/*.java", "src/**/*.kt"],
+    resource_dirs: ["res"],
+    manifest: "AndroidManifest.xml",
+    platform_apis: true,
+    sdk_version: "",
+    certificate: "platform",
+    product_specific: true,
+    //依赖
+    static_libs: [
+        "androidx.appcompat_appcompat",
+        "com.google.android.material_material",
+        "androidx-constraintlayout_constraintlayout",
+        "FirstSystemAndroidLibrary",
+        "lib-lottie",
+    ],
+}
+// 当 platform_apis 为 true 时，sdk_version 必须为空。这种情况下我们的 app 会使用平台 API 进行编译而不是 SDK，这样我们的 App 就能访问到非 SDK API 了。
+// 关于 SDK API 和非 SDK API 的内容可以参考官方文档

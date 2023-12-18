@@ -1,0 +1,7 @@
+# 最后必须留一行，否则编译失败
+/vendor/bin/helloseandroid      u:object_r:hello_se_dt_exec:s0
+/dev/hello_seandroid_dev        u:object_r:hello_se_dev_t:s0
+/dev/hello                      u:object_r:hello_hidl_dev_t:s0
+/vendor/bin/hw/jelly\.hardware\.hello_hidl@1\.0-service    u:object_r:hello_hidl_exec:s0
+/vendor/bin/hello_hidl_test     u:object_r:hello_hidl_test_exec:s0
+/vendor/bin/initscript          u:object_r:initscript_dt_exec:s0
